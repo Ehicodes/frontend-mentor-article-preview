@@ -18,10 +18,14 @@ body{
     line-height: 1.5;
     padding: 3rem;
     background-color: var(--light-grayish-blue);
+     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-width: 43.75em) {
+      padding: 0;
+    }
 }
 
 
@@ -43,6 +47,10 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 73rem;
+
+    @media (min-width: 43.75em) {
+        flex-direction: row;
+    }
 }
 
 .article__img{
@@ -50,10 +58,15 @@ body{
      height: 21rem;
      object-fit: cover;
      object-position: top;
+     @media (min-width: 43.75em){
+         width: 40%;
+         height: auto;
+     }
 }
 
 .article__body{
     padding: 2rem 1.5rem 1.7rem;
+    flex: 1;
 }
 
 .article__header{
@@ -155,3 +168,6 @@ body{
 .hidden{
     display: none;
 }
+
+/* DESKTOP */
+
