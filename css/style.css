@@ -17,13 +17,14 @@ body{
     color: var(--text-color);
     line-height: 1.5;
     padding: 3rem;
+    padding-bottom: 1rem;
     background-color: var(--light-grayish-blue);
      min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media (min-width: 43.75em) {
+    @media (min-width: 48em) {
       padding: 0;
     }
 }
@@ -41,15 +42,15 @@ body{
 }
 
 .article{
-    border-radius: 1.3rem;
-    overflow: hidden;
+      position: relative;
+      border-radius: 1.3rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     max-width: 73rem;
-
-    @media (min-width: 43.75em) {
-        flex-direction: row;
+    @media (min-width: 48em) {
+         flex-direction: row;
+    
     }
 }
 
@@ -58,9 +59,11 @@ body{
      height: 21rem;
      object-fit: cover;
      object-position: top;
-     @media (min-width: 43.75em){
+      border-radius: 1rem 1rem 0 0;
+     @media (min-width: 48em){
          width: 40%;
          height: auto;
+          border-radius: 1rem 0 0 1rem;
      }
 }
 
@@ -122,12 +125,26 @@ body{
     background-color: var(--light-grayish-blue);
 }
 
+.share-btn--active {
+  background-color: var(--desaturated-dark-blue);
+}
+
+.share-btn--active .share-btn__icon {
+  filter: brightness(0) invert(1);
+}
+
 .socials{
     display: none;
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark-grayish-blue);
     padding: 1.4rem 1.8rem;
+        @media (min-width: 43.75em) {
+         position: absolute;
+         border-radius: .7rem;
+         top: 8rem;
+         right: -5rem;
+    }
 }
 
 .socials--active{
@@ -159,6 +176,9 @@ body{
 
 .socials-btn {
      background-color: var(--desaturated-dark-blue);
+      @media (min-width: 48em) {
+        display: none;
+      }
 }
 
 .socials-btn img {
@@ -169,5 +189,4 @@ body{
     display: none;
 }
 
-/* DESKTOP */
 
