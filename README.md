@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ehi-article-preview.netlify.app/]
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to toggle a share popup using JavaScript by adding and removing a class.
+I learned how to toggle a share popup using JavaScript by adding and removing a class. I also practiced positioning an absolutely placed element relative to a card and handling responsive layouts with Flexbox. I also learned how to use `window.matchMedia().matches` to check the screen size in JavaScript.
 
 ```js
 shareBtn.addEventListener('click', () => {
@@ -68,4 +68,3 @@ I used an AI assistant to help debug CSS layout issues and clarify JavaScript ev
 ## Acknowledgments
 
 Thanks to Frontend Mentor for the challenge and design.
-

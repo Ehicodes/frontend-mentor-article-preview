@@ -1,10 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,50 +11,64 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <script defer src="script.js"></script>
-  
-  <title>Frontend Mentor | Article preview component</title>
-
+  <title>Frontend Mentor | Article Preview Component</title>
 </head>
-<body>
-  <article class="article">
-      <img src="/images/drawers.jpg" alt="A modern green dresser with minimal decor on top, set against a neutral wall." class="article__img">   
-    
-      <div class="article__body">
-      <h1 class="article__header">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-      <p class="article__p"> Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
 
-      <div class="author">
-        <div class="author__details">
-          <img src="/images/avatar-michelle.jpg" alt="Michelles's avatar" class="author__img">
-          <div>
-            <h2 class="author__name">Michelle Appleton</h2>
-            <h3 class="author__dob">28 Jun 2020</h3>
+<body>
+  <main>
+    <article class="article">
+      <img src="./images/drawers.jpg" alt="A modern green dresser with minimal decor on top, set against a neutral wall." class="article__img">
+
+      <div class="article__body">
+        <h1 class="article__header">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+
+        <p class="article__p">
+          Ever been in a room and felt like something was missing?
+          Perhaps it felt slightly bare and uninviting. I've got some
+          simple tips to help you make any room feel complete.
+        </p>
+
+        <div class="author">
+          <div class="author__details">
+            <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton" class="author__img">
+
+            <div class="name-info">
+              <h2 class="author__name">Michelle Appleton</h2>
+              <p class="author__dob">28 Jun 2020</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="share-btn">
-            <img src="/images/icon-share.svg" alt="Share this article" class="share-btn__icon">
+
+          <div class="socials" id="share-panel">
+            <div class="socials__wrapper">
+              <h3 class="socials__header">Share</h3>
+
+              <div class="socials__icons-wrapper">
+                <a href="#" aria-label="Share on Facebook">
+                  <img src="./images/icon-facebook.svg" alt="" class="social__icon">
+                </a>
+
+                <a href="#" aria-label="Share on Twitter">  
+                  <img src="./images/icon-twitter.svg" alt="" class="social__icon" > 
+                </a>
+
+                <a href="#" aria-label="Share on Pinterest">
+                  <img src="./images/icon-pinterest.svg" alt="" class="social__icon" >
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="share-btn" type="button" aria-label="Share article" aria-expanded="false" aria-controls="share-panel" >
+            <img src="./images/icon-share.svg"  alt="" class="share-btn__icon" >
+          </button>
         </div>
       </div>
-   </div>
+    </article>
+  </main>
 
-   <div class="socials">
-       <div class="socials__wrapper">
-            <h4 class="socials__header">Share</h4>
-
-            <div class="socials__icons-wrapper">
-                <img src="/images/icon-facebook.svg" alt="Share the article on Facebook" class="social__icon">
-                <img src="/images/icon-twitter.svg" alt="Share the article on Twitter" class="social__icon">
-                <img src="/images/icon-pinterest.svg" alt="Share the article on Pinterest" class="social__icon">
-           </div>
-       </div>
-     
-       <div class="socials-btn">
-            <img src="/images/icon-share.svg" alt="Share this article">
-        </div>
-   </div>
-</article>
+  <script src="script.js"></script>
 </body>
 </html>
-
